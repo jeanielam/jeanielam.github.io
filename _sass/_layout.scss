@@ -17,6 +17,9 @@
 	.inner-wrap {
 		@include outer-container;
 	}
+
+    // background-color: rgba(220, 220, 220, 0.9);
+    box-shadow: inset 0px 0px 150px darkgray;
 }
 .site-title {
 	@include row;
@@ -29,11 +32,10 @@
 	color: $black;
 	font-family: $alt-font;
 	font-weight: 700;
-	@include font-size(20,no);
+	@include font-size(25,no);
 	line-height: .5 * $masthead-height; // half the height to center vertically
 	text-transform: uppercase;
 }
-
 
 /*
    Menus
@@ -103,7 +105,7 @@
 	li {
 		a {
 			font-weight: 700;
-			@include font-size(16,no);
+			@include font-size(18,no);
 			line-height: .5 * $masthead-height; // half the height to center vertically
 			color: $black;
 			text-transform: uppercase;
@@ -143,6 +145,7 @@
    ========================================================================== */
 
 #main {
+	
 	.inner-wrap {
 		@include media($medium) {
 			@include span-columns(9);
@@ -228,17 +231,17 @@
 }
 // page lead
 .page-lead {
-	background-position: center top;
-	background-repeat: no-repeat;
+	background-position: right bottom;
 	background-attachment: fixed;
-	text-align: center;
-	color: $white;
-	@include media($large) {
-		background-size: cover;
-	}
+	
+	background-repeat: no-repeat;
+	
+	
 }
 .page-lead-content {
+	background-color: rgbd(255,255,255,0.5);
 	padding: 1em;
+	font-color: #a9a9a9;
 	@include media($medium) {
 		padding: 2em;
 	}
@@ -253,6 +256,8 @@
 		@include media($large) {
 			@include font-size(72);
 		}
+
+
 	}
 	h2 {
 		@include font-size(20);
@@ -268,9 +273,8 @@
 .page-feature {
 	@include fill-parent;
 	// expand image to cover full width of header
-	img {
-		width: 100%;
-	}
+	background-image: rgb(255,255,255);
+	
 }
 // make image flush with edges on small screens
 .page-image {
@@ -285,13 +289,13 @@
 		margin: 0 auto;
 		padding: 10px 15px;
 		background-color: rgba($black,.5);
-		color: $white;
+		color: $darkgrey;
 		font-family: $alt-font;
 		@include font-size(12,no);
 		text-align: right;
 		z-index: 10;
 		a {
-			color: $white;
+			color: $darkgrey;
 			text-decoration: none;
 		}
 	}

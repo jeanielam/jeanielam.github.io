@@ -2,5 +2,5 @@
 layout: home
 permalink: /
 image:
-  feature: test.jpg
+  feature: background-opacity.png
 ---

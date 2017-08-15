@@ -9,10 +9,10 @@
 $base-font                   	: Georgia,Times,"Times New Roman",serif;
 $heading-font                	: "Helvetica Neue","Segoe UI",Arial,sans-serif;
 $caption-font                	: $base-font;
-$code-font                   	: monospace;
+$code-font                   	: consolas;
 $alt-font                    	: $heading-font;
 
-$doc-font-size               	: 16;
+$doc-font-size               	: 14;
 $doc-line-height             	: 24;
 
 $border-radius               	: 3px;
@@ -23,8 +23,10 @@ $border-radius               	: 3px;
 
 $white                        : #fff;
 $black                        : #000;
+$darkgrey                     : #2e2e2e;
 
 $body-color                  	: #ebebeb;
+$background-color             : #779ecb;
 
 $text-color                  	: #313130;
 $caption-color                : mix($white, $text-color, 25%);

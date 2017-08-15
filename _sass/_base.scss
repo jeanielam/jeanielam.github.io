@@ -9,6 +9,11 @@
 body {
 	font-family: $base-font;
 	color: $text-color;
+	background-image: url(/images/background-opacity.png);
+	background-repeat: no-repeat;
+	background-size: 60% 100%;
+	background-position: right bottom;
+	background-color: #d3d3d3;
 	@include font-size(16);
 }
 
