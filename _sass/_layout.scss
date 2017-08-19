@@ -18,9 +18,9 @@
 		@include outer-container;
 	}
 
-    // background-color: rgba(220, 220, 220, 0.9);
-    box-shadow: inset 0px 0px 150px darkgray;
+    background-color: rgba(255, 255, 255, 0.9);
 }
+
 .site-title {
 	@include row;
 	@include media($large) {
@@ -129,7 +129,9 @@
    ========================================================================== */
 
 #page-wrapper {
-	padding: 0 $gutter; // add white space for smaller screens
+
+	/*padding: 0 $gutter; // add white space for smaller screens*/
+	padding: 1em 1em 0.5em 3em;
 	@include size(100% 100%);
 	-webkit-overflow-scrolling: touch;
 	z-index: 2;
@@ -138,6 +140,9 @@
 	&.slide {
 		@include transform(translate(-60rem,0));
 	}
+	background-color: rgba(48,48,48,1);
+	color: rgb(255,255,255);
+
 }
 
 /*
@@ -153,6 +158,7 @@
 	}
 	.page-title {
 		@include fill-parent;
+		color: rgb(0, 185, 215);
 	}
 	@at-root {
 		.page-content {
@@ -164,7 +170,8 @@
 				}
 			}
 			// cleaner underlines for links
-			a { text-decoration: none; }
+			a { text-decoration: none;
+				color: rgb(166, 226,46); }
 			p a,
 			li a {
 				border-bottom: 1px dotted lighten($link-color, 50);
@@ -174,6 +181,9 @@
 			}
 			p > a.reversefootnote {
 				border-bottom-width: 0;
+			}
+			time {
+				color: rgb(249,38,114);
 			}
       .toc li > a {
         border-bottom-width: 0;
@@ -239,9 +249,11 @@
 	
 }
 .page-lead-content {
-	background-color: rgbd(255,255,255,0.5);
+
+	/*background-color: rgbd(255,255,255,0.5);*/
 	padding: 1em;
-	font-color: #a9a9a9;
+	/*font-color: #a9a9a9;*/
+	color: white;
 	@include media($medium) {
 		padding: 2em;
 	}
@@ -327,6 +339,7 @@
 }
 .author-name {
 	@include font-size(20,no);
+	color: rgb(253,151,31);
 }
 .author-bio {
 	margin-top: 0;
