@@ -158,7 +158,7 @@
 	}
 	.page-title {
 		@include fill-parent;
-		color: rgb(0, 185, 215);
+		color: $blue;
 	}
 	@at-root {
 		.page-content {
@@ -171,7 +171,7 @@
 			}
 			// cleaner underlines for links
 			a { text-decoration: none;
-				color: rgb(166, 226,46); }
+				color: $green; }
 			p a,
 			li a {
 				border-bottom: 1px dotted lighten($link-color, 50);
@@ -183,7 +183,7 @@
 				border-bottom-width: 0;
 			}
 			time {
-				color: rgb(249,38,114);
+				color: $pink;
 			}
       .toc li > a {
         border-bottom-width: 0;
@@ -243,7 +243,7 @@
 .page-lead {
 	background-position: right bottom;
 	background-attachment: fixed;
-	
+	height: 100%;
 	background-repeat: no-repeat;
 	
 	
@@ -253,14 +253,15 @@
 	/*background-color: rgbd(255,255,255,0.5);*/
 	padding: 1em;
 	/*font-color: #a9a9a9;*/
-	color: white;
+	color: $white;
 	@include media($medium) {
-		padding: 2em;
+		padding: 8em;
 	}
 	@include media($large) {
-		padding: 3em;
+		padding: 8em;
 	}
 	h1 {
+		color: $blue;
 		@include font-size(48);
 		@include media($medium) {
 			@include font-size(60);
@@ -272,6 +273,7 @@
 
 	}
 	h2 {
+		color: $green;
 		@include font-size(20);
 		@include media($medium) {
 			@include font-size(24);
@@ -280,6 +282,12 @@
 			@include font-size(32);
 		}
 	}
+	a {
+		vertical-align: middle;
+		margin: auto;
+	}
+	display: inline-block;
+	padding-bottom: 100%;
 }
 // page header
 .page-feature {
@@ -313,6 +321,14 @@
 	}
 }
 
+.image-align-right {
+	position: right center;
+	margin-right: 3em;
+	display: inline-block;
+
+}
+
+
 /*
    Page footer
    ========================================================================== */
@@ -339,7 +355,7 @@
 }
 .author-name {
 	@include font-size(20,no);
-	color: rgb(253,151,31);
+	color: $orange;
 }
 .author-bio {
 	margin-top: 0;
