@@ -18,7 +18,8 @@
 		@include outer-container;
 	}
 
-    background-color: rgba(255, 255, 255, 0.9);
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+
 }
 
 .site-title {
@@ -29,7 +30,7 @@
 	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
 	height: $masthead-height;
 	text-decoration: none;
-	color: $black;
+	color: $white;
 	font-family: $alt-font;
 	font-weight: 700;
 	@include font-size(25,no);
@@ -107,7 +108,7 @@
 			font-weight: 700;
 			@include font-size(18,no);
 			line-height: .5 * $masthead-height; // half the height to center vertically
-			color: $black;
+			color: $white;
 			text-transform: uppercase;
 		}
 	}
@@ -140,9 +141,8 @@
 	&.slide {
 		@include transform(translate(-60rem,0));
 	}
-	background-color: rgba(48,48,48,1);
+	/*background-color: rgba(48,48,48,1);*/
 	color: rgb(255,255,255);
-
 }
 
 /*
@@ -254,12 +254,14 @@
 	padding: 1em;
 	/*font-color: #a9a9a9;*/
 	color: $white;
+
 	@include media($medium) {
 		padding: 8em;
 	}
 	@include media($large) {
 		padding: 8em;
 	}
+	text-align: center;
 	h1 {
 		color: $blue;
 		@include font-size(48);
@@ -269,7 +271,6 @@
 		@include media($large) {
 			@include font-size(72);
 		}
-
 
 	}
 	h2 {
@@ -285,6 +286,11 @@
 	a {
 		vertical-align: middle;
 		margin: auto;
+	}
+
+	p {
+		margin: match-parent;
+
 	}
 	display: inline-block;
 	padding-bottom: 100%;

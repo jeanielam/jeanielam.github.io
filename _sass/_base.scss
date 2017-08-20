@@ -10,10 +10,10 @@ body {
 	font-family: $base-font;
 	color: $text-color;
 	background-color: rgba(48,48,48,0.9);
-	background-image: url(/images/background-opacity.png);
+	/*background-image: url(/images/background-opacity.png);*/
 	background-repeat: no-repeat;
 	background-size: 60% 100%;
-	background-position: right bottom;
+	/*background-position: right bottom;*/
 	/*background-color: #d3d3d3;*/
 	@include font-size(16);
 	color: $white;
