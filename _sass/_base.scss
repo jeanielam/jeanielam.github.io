@@ -10,10 +10,7 @@ body {
 	font-family: $base-font;
 	color: $text-color;
 	background-color: rgba(48,48,48,0.9);
-	/*background-image: url(/images/background-opacity.png);*/
-	background-repeat: no-repeat;
-	background-size: 60% 100%;
-	/*background-position: right bottom;*/
+	
 	/*background-color: #d3d3d3;*/
 	@include font-size(16);
 	color: $white;
@@ -36,9 +33,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	@include font-size(36);
+	color: $blue;
 }
 h2 {
 	@include font-size(32);
+	color: $green;
 }
 h3 {
 	@include font-size(28);

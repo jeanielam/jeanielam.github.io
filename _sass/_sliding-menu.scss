@@ -26,7 +26,8 @@
   display: block;
   width: $button-size * 2;
   height: $button-size * 2;
-  background: $primary-color;
+  /*background: $primary-color;*/
+  background-color: $pink;
   outline: 1;
   padding: 0;
   border: 2.5px solid transparent;
