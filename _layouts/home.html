@@ -35,6 +35,7 @@
     {% include navigation-sliding.html %}
     <link rel="stylesheet" href="{{ site.url }}/css/disablescroll.css">
     <!-- {% if page.image.feature %} -->
+    <div class="page-wrapper">
     <div class="page-lead-content">
       <!-- <div class="page-lead-content"> -->
         <h1>Hi there.</h1>
@@ -42,8 +43,9 @@
         <a href="{{ site.url }}/blog/" class="btn-inverse">View my blog</a> &nbsp; or &nbsp; <a href="{{ site.url }}/portfolio/" class="btn-inverse">View my portfolio</a>
       <!-- </div> /.page-lead-content -->
       </div> <!-- /.page-lead -->
+    </div>
     <!-- {% endif %} -->
-
+    {% include footer.html %}
 
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
