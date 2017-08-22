@@ -125,17 +125,20 @@
 	}
 }
 
-
+#home-page {
+	background-color: $background-color;
+	min-height: 100%;
+}
 /*
    Page wrapper
    ========================================================================== */
 
 #page-wrapper {
-	background-color: rgb(238,233,233);
+	background-color: $background-color;
 	min-height: 100%;
 
 	/*padding: 0 $gutter;*/
-	padding: 1em 1em 0.5em 3em;
+	padding: 1em 1em 0em 1em;
 	/*@include size(100% 100%);*/
 	-webkit-overflow-scrolling: touch;
 	z-index: 2;
@@ -151,20 +154,24 @@
 	#about-content {
 		font-family: $heading-font;
 		text-align: left;
-		padding: 0em 8em 0em 8em;
+		padding: 0em 1em 0em 1em;
 		font-size: 1em;
 		margin-bottom: 10px;
+		
+	}
+	#about {
+
+		padding: 0em 1em 0em 1em;
+		
 	}
 	p {		
 		font-family: $heading-font;
 		text-align: left;
-		padding: -1em 8em 0em 8em;
+		padding: 0em 1em 0em 0em;
 		font-size: $doc-font-size;
 		margin-bottom: 10px;
 	}
-	h1 {
-		padding: 0em 8em 0em 3.5em;
-	}
+
 }
 
 /*
@@ -272,9 +279,9 @@
 	
 }
 .page-lead-content {
-background-image: url(/images/background-opacity.png);
+	background-image: url(/images/background-opacity.png);
 	background-repeat: no-repeat;
-	background-size: 60% 100%;
+	background-size: cover;
 	background-position: center bottom;
 	/*background-color: rgbd(255,255,255,0.5);*/
 	padding: 1em;
