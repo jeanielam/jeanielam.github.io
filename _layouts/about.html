@@ -35,21 +35,24 @@
   
     <!-- <link rel="stylesheet" href="{{ site.url }}/css/disablescroll.css"> -->
 
-    <div id="page-wrapper">
-      <h1 id="about"> {{ page.title }} </h1>
+    <div id="main">
+      <div class="wrap">
+        <div class="page-title">
+          <h1 id="about"> {{ page.title }} </h1>
+        </div>
+        
+          <p id="about-content">
+            <img style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;" src="/images/bio-photo.jpg"/>
+            I'm Jeanie, a Computer Science student born and raised in beautiful British Columbia and currently entering her last year of studies at UBC.
 
-      <div id="page-wrapper-content">
-        <p id="about-content">
-          <img style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;" src="/images/bio-photo.jpg"/>
-          I'm Jeanie, a Computer Science student born and raised in beautiful British Columbia and currently entering her last year of studies at UBC.
-
-          On the tech front, I'm into all things data. Constructing data pipelines, seeing data being moved from point A to B, and being utilized by data scientists tickles my fancy. I'm all for the world of analytics, especially when it comes to sports. I'm an avid Canucks and Raptors fan, and I love to follow the prospects, players, post-game reports and advanced statistics of the team. Start talking to me about hockey, and we'll never stop talking. 
-        </p>
-        <p id="about-content">
-          Above all things, my friends know me as the foodie of the group -- I keep tabs on newly opened restaurants, and check for reviews by notable food bloggers in the area to determine where my next chowdown will be. I love to try new foods, and recreate them in the kitchen. I noticed that not many of my coworkers were bringing in homemade lunches throughout the week, and often opting to buy food from the cafeteria, or head out to the closest restaurant everyday. That adds up, and at approximately $8 per day, 5 days a week, we have plenty of money to work with. I want to show others that meal prepping is not hard, not very time consuming, yet, very rewarding at the end of the day. Many of my friends and coworkers have been asking me for my recipe of a particular marinade when I bring food for potlucks, so I've started my <a href="/blog">blog</a> to document what spices and sauces I use. 
-        </p>
-      </div>
-    {% include footer.html %}
+            On the tech front, I'm into all things data. Constructing data pipelines, seeing data being moved from point A to B, and being utilized by data scientists tickles my fancy. I'm all for the world of analytics, especially when it comes to sports. I'm an avid Canucks and Raptors fan, and I love to follow the prospects, players, post-game reports and advanced statistics of the team. Start talking to me about hockey, and we'll never stop talking. 
+          </p>
+          <p id="about-content">
+            Above all things, my friends know me as the foodie of the group -- I keep tabs on newly opened restaurants, and check for reviews by notable food bloggers in the area to determine where my next chowdown will be. I love to try new foods, and recreate them in the kitchen. I noticed that not many of my coworkers were bringing in homemade lunches throughout the week, and often opting to buy food from the cafeteria, or head out to the closest restaurant everyday. That adds up, and at approximately $8 per day, 5 days a week, we have plenty of money to work with. I want to show others that meal prepping is not hard, not very time consuming, yet, very rewarding at the end of the day. Many of my friends and coworkers have been asking me for my recipe of a particular marinade when I bring food for potlucks, so I've started my <a href="/blog">blog</a> to document what spices and sauces I use. 
+          </p>
+        </div>
+      
+      {% include footer.html %}
     </div>
 
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>

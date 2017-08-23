@@ -3,8 +3,9 @@ layout: default
 ---
 
 <div id="main" role="main">
+	{% include breadcrumbs.html %}
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
-		{% include breadcrumbs.html %}
+		
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
 		</div>
@@ -31,6 +32,7 @@ layout: default
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
+	
 	</article><!-- ./wrap -->
 	{% include footer.html %}
 </div><!-- /#main -->

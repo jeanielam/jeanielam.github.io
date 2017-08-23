@@ -32,18 +32,22 @@
   </head>
 
   <body id="js-body">
-    <div id="page-wrapper">
-    	<h1 id="about"> {{ page.title }} </h1>
-		<div id="page-wrapper-content">
-			<nav>
-				<ul>
-					<li>Twitter</li>
-					<li>GitHub</li>
-					<li>LinkedIn</li>
-					<li>Email</li>
-				</ul>
-			</nav>
+    <div id="main">
+    	<div class="wrap">
+	    	<div class="page-title">
+	    		<h1 id="about"> {{ page.title }} </h1>
+	    	</div>
+			
+				<nav>
+					<ul>
+						<li>Twitter</li>
+						<li>GitHub</li>
+						<li>LinkedIn</li>
+						<li>Email</li>
+					</ul>
+				</nav>
 		</div>
+		
 		{% include footer.html %}
 	</div>
 	 <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>

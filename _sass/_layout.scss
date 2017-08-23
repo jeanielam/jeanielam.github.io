@@ -128,10 +128,6 @@
 #main-page {
 	background-color: $background-color;
 	min-height: 100%;
-	/*background-image: url(/images/blue-polygonal-abstract.jpg);*/
-	/*background-color: $background-color;*/
-	/*background-repeat: no-repeat;*/
-	/*background-size: cover;*/
 }
 /*
    Page wrapper
@@ -155,6 +151,28 @@
 	/*color: rgb(255,255,255);*/
 	color: $black;
 
+	
+
+}
+
+/*
+   Main content
+   ========================================================================== */
+
+#main {
+	background-color: $background-color;
+	min-height: 100%;
+	padding-top: $gutter;
+	.wrap {
+
+		padding: $gutter;
+		  background: $white;
+		  background-clip: padding-box;
+		  box-shadow: 0px 7px 11px grey;
+		  color: $black;
+
+	}
+
 	#about-content {
 		font-family: $heading-font;
 		text-align: left;
@@ -175,14 +193,6 @@
 		font-size: $doc-font-size;
 		margin-bottom: 10px;
 	}
-
-}
-
-/*
-   Main content
-   ========================================================================== */
-
-#main {
 	
 	.inner-wrap {
 		@include media($medium) {
@@ -192,6 +202,9 @@
 	.page-title {
 		@include fill-parent;
 		color: $blue;
+		h1 {
+			margin-top: 0;
+		}
 	}
 	@at-root {
 		.page-content {
@@ -283,7 +296,7 @@
 	
 }
 .page-lead-content {
-	background-image: url(/images/background-opacity.png);
+	/*background-image: url(/images/background-opacity.png);*/
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -346,8 +359,10 @@
 // make image flush with edges on small screens
 .page-image {
 	position: relative;
-	margin-left: -1 * $gutter;
-	margin-right: -1 * $gutter;
+	/*margin-left: -1 * $gutter;*/
+	margin: 0 auto;
+	/*margin-right: -1 * $gutter;*/
+	display: inline-block;
 	// feature image caption
 	.image-credit {
 		position: absolute;
