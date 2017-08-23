@@ -180,6 +180,7 @@
 		font-size: 1em;
 		margin-bottom: 10px;
 		
+		
 	}
 	#about {
 
@@ -193,7 +194,7 @@
 		font-size: $doc-font-size;
 		margin-bottom: 10px;
 	}
-	
+
 	.inner-wrap {
 		@include media($medium) {
 			@include span-columns(9);
