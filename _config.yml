@@ -8,7 +8,11 @@ locale: en
 url: 
 feed:
   path: atom.xml
-
+pagination:
+  per_page: 8
+  limit: false
+  collection: posts
+  permalink: /:num/
 # Jekyll configuration
 
 sass:
@@ -22,7 +26,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-
+  - octopress-paginate
 
 # Site owner
 owner:
@@ -33,7 +37,7 @@ owner:
     ad-client:
     ad-slot:
   bio:
-  avatar: bio-photo.jpg # 160x160 px image for author byline
+  avatar: headshot.png # 160x160 px image for author byline
   disqus-shortname:
 
 
