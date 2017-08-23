@@ -18,12 +18,16 @@
   }
   .post-title {
     @include font-size(18,no);
+    text-align: center;
+    padding-bottom: $gutter;
+    text-transform: uppercase;
   }
   .post-excerpt {
     @include font-size(16);
   }
-  .post-teaser {
-    position: relative;
+  .post-feature {
+    /*position: center;*/
+    margin: 0 auto;
     display: block;
     &:after {
       content: '';
@@ -42,4 +46,9 @@
       }
     }
   }
+
+  padding: $gutter;
+  background: $white;
+  background-clip: padding-box;
+  box-shadow: 0px 7px 11px grey;
 }
