@@ -1,9 +1,15 @@
 ---
 sitemap: true
 ---
-
+head {
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 body{
-	margin: 0;
+	/*margin: 0;
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;*/
+	flex: 1;
+
 }

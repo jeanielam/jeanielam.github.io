@@ -26,14 +26,12 @@
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
       <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
-
+	{% include browser-upgrade.html %}
+    {% include header.html %}
+    {% include navigation-sliding.html %}
   </head>
 
   <body id="js-body">
-    {% include browser-upgrade.html %}
-    {% include header.html %}
-    {% include navigation-sliding.html %}
-    <link rel="stylesheet" href="{{ site.url }}/css/disablescroll.css">
     <div id="page-wrapper">
     	<h1 id="about"> {{ page.title }} </h1>
 		<div id="page-wrapper-content">

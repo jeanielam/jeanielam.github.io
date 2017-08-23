@@ -125,7 +125,7 @@
 	}
 }
 
-#home-page {
+#main-page {
 	background-color: $background-color;
 	min-height: 100%;
 }
@@ -137,8 +137,8 @@
 	background-color: $background-color;
 	min-height: 100%;
 
-	/*padding: 0 $gutter;*/
-	padding: 1em 1em 0em 1em;
+	padding: 1em $gutter;
+	/*padding: 1em 1em 0em 1em;*/
 	/*@include size(100% 100%);*/
 	-webkit-overflow-scrolling: touch;
 	z-index: 2;
@@ -287,7 +287,7 @@
 	padding: 1em;
 	/*font-color: #a9a9a9;*/
 	color: $white;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	@include media($medium) {
 		padding: 8em;
@@ -405,10 +405,12 @@
 /*
    Site footer
    ========================================================================== */
-
 #site-footer {
 	@include outer-container;
-
+	min-height: 100%;
+	
+	/*width: 100%;*/
+	
 	margin-top: (3 * (0px + $doc-line-height));
 	margin-top: (3 * (0rem + ($doc-line-height / $doc-font-size)));
 	padding-bottom: $gutter;

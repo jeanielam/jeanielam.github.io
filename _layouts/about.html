@@ -26,14 +26,14 @@
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
       <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
-
+      {% include browser-upgrade.html %}
+    {% include header.html %}
+    {% include navigation-sliding.html %}
   </head>
 
   <body id="js-body">
-    {% include browser-upgrade.html %}
-    {% include header.html %}
-    {% include navigation-sliding.html %}
-    <link rel="stylesheet" href="{{ site.url }}/css/disablescroll.css">
+  
+    <!-- <link rel="stylesheet" href="{{ site.url }}/css/disablescroll.css"> -->
 
     <div id="page-wrapper">
       <h1 id="about"> {{ page.title }} </h1>
@@ -49,7 +49,7 @@
           Above all things, my friends know me as the foodie of the group -- I keep tabs on newly opened restaurants, and check for reviews by notable food bloggers in the area to determine where my next chowdown will be. I love to try new foods, and recreate them in the kitchen. I noticed that not many of my coworkers were bringing in homemade lunches throughout the week, and often opting to buy food from the cafeteria, or head out to the closest restaurant everyday. That adds up, and at approximately $8 per day, 5 days a week, we have plenty of money to work with. I want to show others that meal prepping is not hard, not very time consuming, yet, very rewarding at the end of the day. Many of my friends and coworkers have been asking me for my recipe of a particular marinade when I bring food for potlucks, so I've started my <a href="/blog">blog</a> to document what spices and sauces I use. 
         </p>
       </div>
-      {% include footer.html %}
+    {% include footer.html %}
     </div>
 
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
