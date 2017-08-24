@@ -203,7 +203,7 @@
 	.page-title {
 		@include fill-parent;
 		color: $blue;
-		h1 {
+		h1,h4 {
 			margin-top: 0;
 		}
 	}
@@ -441,7 +441,8 @@
 	margin-top: (3 * (0px + $doc-line-height));
 	margin-top: (3 * (0rem + ($doc-line-height / $doc-font-size)));
 	padding-bottom: $gutter;
-	
+	display: flex;
+	justify-content: center;
 	font-family: $alt-font;
   /* Copyright text */
 	.copyright {
@@ -453,11 +454,13 @@
 		}
 	}
 	text-align: center;
-	#links {
+
+	/*#links {
 		text-align: center;
 		position: relative;
 		display: inline-block;
-	}
+	}*/
+
 
 }
 
