@@ -9,6 +9,12 @@ layout: default
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
 		</div>
+		<div class="page-content">
+			{% include page-meta.html %}
+			{% for tag in page.tags %}
+            	<a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+            {% endfor %}
+		</div>
 		<div class="inner-wrap">
 			{% if page.image.feature %}
 				<div class="page-feature">
@@ -22,17 +28,17 @@ layout: default
 				{{ content }}
 				<hr />
 				<footer class="page-footer">
-					{% if page.categories %}{% include page-author.html %}{% endif %}
-					{% if page.share != false %}{% include share-this.html %}{% endif %}
-					{% include page-meta.html %}
+					{% include suggested-posts.html %}
 				</footer><!-- /.footer -->
 				<aside>
-					{% if page.comments == true %}{% include comments.html %}{% endif %}
+					{% include comments.html %}
 				</aside>
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
+		
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
 	
 	</article><!-- ./wrap -->
+	
 	{% include footer.html %}
 </div><!-- /#main -->

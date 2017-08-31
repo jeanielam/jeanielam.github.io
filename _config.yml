@@ -27,12 +27,15 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - octopress-paginate
+  - jekyll-seo-tag
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
 
 # Site owner
 owner:
   name: Jeanie Lam
   email:
-  twitter:
+  twitter: jeanielam
   google:
     ad-client:
     ad-slot:

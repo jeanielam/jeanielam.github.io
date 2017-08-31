@@ -4,6 +4,9 @@ layout: default
 
 <div id="main" role="main">			
 	<div class="wrap">
+		{% for tag in tags %}
+			<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+		{% endfor %}
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
 			{% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}

@@ -240,7 +240,6 @@
 			.page-footer,
 			.pagination {
 				@include fill-parent;
-				color: $pink;
 			}
 			.page-meta {
 				p{
@@ -401,6 +400,10 @@
 
 .page-footer {
 	position: relative;
+	img {
+		width: match-parent;
+		max-height: 100px;
+	}
 }
 
 /* Author block */
