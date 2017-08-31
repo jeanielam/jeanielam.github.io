@@ -11,9 +11,13 @@ layout: default
 		</div>
 		<div class="page-content">
 			{% include page-meta.html %}
-			{% for tag in page.tags %}
-            	<a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-            {% endfor %}
+
+			<div class="tags">
+				<a>Tags: </a>
+				{% for tag in page.tags %}
+	            	<a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+	            {% endfor %}
+           </div>
 		</div>
 		{% if page.image.feature %}
 			<div class="page-feature">

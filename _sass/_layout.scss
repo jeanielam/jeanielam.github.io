@@ -236,6 +236,27 @@
 			time {
 				color: $pink;
 			}
+
+			.tags {
+				a {
+					text-decoration: none;
+					font-family: $alt-font;
+					font-size: 16px;
+				}
+				.tag {
+					-moz-border-radius: 3px;
+				   border-radius: 7px;
+				    border:solid 1px darkgrey; 
+				    padding:5px;
+				    color: grey;
+				    font-size: 12px;
+				    &:hover {
+						border:solid 1px $pink; 
+					}
+				}
+
+				
+			}
 			
       .toc li > a {
         border-bottom-width: 0;
