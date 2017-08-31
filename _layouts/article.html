@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="main" role="main">
-	{% include breadcrumbs.html %}
+	
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
 		
 		<div class="page-title">
@@ -15,25 +15,30 @@ layout: default
             	<a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
             {% endfor %}
 		</div>
+		{% if page.image.feature %}
+			<div class="page-feature">
+				<figure>
+				<!-- <div class="page-image"> -->
+					<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+					{% if page.image.credit %}{% include image-credit.html %}{% endif %}
+				</figure>
+				<!-- </div>/.page-image -->
+			</div><!-- /.page-feature -->
+		{% endif %}
 		<div class="inner-wrap">
-			{% if page.image.feature %}
-				<div class="page-feature">
-					<div class="page-image">
-						<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
-						{% if page.image.credit %}{% include image-credit.html %}{% endif %}
-					</div><!-- /.page-image -->
-				</div><!-- /.page-feature -->
-			{% endif %}
+
 			<div id="content" class="page-content" itemprop="articleBody">
 				{{ content }}
-				<hr />
-				<footer class="page-footer">
-					{% include suggested-posts.html %}
-				</footer><!-- /.footer -->
-				<aside>
+				<!-- <hr /> -->
+				<!-- <footer class="page-footer"> -->
+					
+				<!-- </footer>/.footer -->
+				<!-- <aside>
 					{% include comments.html %}
-				</aside>
+				</aside> -->
 			</div><!-- /.content -->
+			<hr />
+			{% include suggested-posts.html %}
 		</div><!-- /.inner-wrap -->
 		
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}

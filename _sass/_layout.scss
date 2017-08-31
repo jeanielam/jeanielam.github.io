@@ -199,6 +199,9 @@
 		@include media($medium) {
 			@include span-columns(9);
 		}
+		hr {
+			margin: $gutter 0;
+		}
 	}
 	.page-title {
 		@include fill-parent;
@@ -240,6 +243,7 @@
 			.page-footer,
 			.pagination {
 				@include fill-parent;
+				padding: 0;
 			}
 			.page-meta {
 				p{
@@ -363,9 +367,18 @@
 .page-image {
 	position: relative;
 	/*margin-left: -1 * $gutter;*/
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	/*margin-right: -1 * $gutter;*/
-	display: inline-block;
+	/*display: inline-block;*/
+	.page-feature-image {
+		display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  height: auto;
+	  width: fill-parent;
+	  
+	}
+	 
 	// feature image caption
 	.image-credit {
 		position: absolute;
@@ -404,6 +417,7 @@
 		width: match-parent;
 		max-height: 100px;
 	}
+	padding: 0;
 }
 
 /* Author block */
