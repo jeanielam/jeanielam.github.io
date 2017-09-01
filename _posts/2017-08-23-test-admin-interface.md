@@ -1,5 +1,6 @@
 ---
 title: Test Admin Interface
+date: 2017-08-23 00:00:00 -0800
 tags: [test, admin]
 layout: article
 categories: blog

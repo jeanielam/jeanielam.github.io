@@ -7,6 +7,7 @@ paginate: true
 
 <div class="tiles">
 	{% for post in paginator.posts %}
+    <a> Hi. </a>
 		{% include post-grid.html %}
 	{% endfor %}
 </div>
