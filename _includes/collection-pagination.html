@@ -1,5 +1,5 @@
 <nav class="pagination">
-	{% capture collection_name %}{{ include.collection }}{% endcapture %}
+	{% capture collection_name %}{{ include.categories }}{% endcapture %}
 	{% for post in site.[collection_name] %}
 		{% if post.url == page.url %}
 		  {% assign post_index0 = forloop.index0 %}
