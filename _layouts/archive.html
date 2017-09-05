@@ -28,7 +28,7 @@ layout: default
 			  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
 			    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
 			    
-	        	<a class="tag" href="/tag/{{ tag | slugify }}">{{ this_word }}</a>
+	        	<a class="tag" href="/tag/{{ this_word | slugify }}">{{ this_word }}</a>
 		           
 			  {% endunless %}{% endfor %}
 			</div>
