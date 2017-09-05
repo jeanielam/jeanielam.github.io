@@ -25,12 +25,12 @@ layout: default
 
 				<!-- `tag_words` is a sorted array of the tag names. -->
 				{% assign tag_words = site_tags | split:',' | sort %}
-			  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-			    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+			  	{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+			    	{% capture this_word %}{{ tag_words[item] }}{% endcapture %}
 			    
-	        	<a class="tag" href="/tag/{{ this_word | slugify }}">{{ this_word }}</a>
+	        		<a class="tag" href="/tag/{{ this_word | slugify }}">{{ this_word }}</a>
 		           
-			  {% endunless %}{% endfor %}
+				{% endunless %}{% endfor %}
 			</div>
 		</div>
 		<div class="archive-wrap">
