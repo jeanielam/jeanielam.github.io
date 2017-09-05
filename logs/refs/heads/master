@@ -1,0 +1,28 @@
+0000000000000000000000000000000000000000 5a37a11a8c11c137b7a9f2ca12783ad86904eb3d jeanielam <jeanielam321@gmail.com> 1502248335 -0400	initial pull
+5a37a11a8c11c137b7a9f2ca12783ad86904eb3d ef1882a03a23db870b24cc71b6bd548ff60f2472 jeanielam <jeanielam321@gmail.com> 1502248506 -0400	commit: Applying skinny bones jekyll theme
+ef1882a03a23db870b24cc71b6bd548ff60f2472 19bd3723d338561a40010358a39e90d78660f1ff jeanielam <jeanielam321@gmail.com> 1502679075 -0400	commit: Testing creation of new posts and created links
+19bd3723d338561a40010358a39e90d78660f1ff eb70378af73d77e97b771c7569ec270389654ca6 jeanielam <jeanielam321@gmail.com> 1502765039 -0400	commit: Changed base background colour, image, and amended size of navigation menu
+eb70378af73d77e97b771c7569ec270389654ca6 e70fba7be2b8d91f67a429dd10d574afd48a1668 jeanielam <jeanielam321@gmail.com> 1503182513 -0400	commit: Added monokai colour scheme and disabled scrolling
+e70fba7be2b8d91f67a429dd10d574afd48a1668 8b266086cac493f29de280114ffe1010b5a1b202 jeanielam <jeanielam321@gmail.com> 1503202270 -0400	commit: Changed latests posts grid to have blog image, and moved image to within the title of blog post
+8b266086cac493f29de280114ffe1010b5a1b202 42215197e7e04093104b8dbed342aa7e39475569 jeanielam <jeanielam321@gmail.com> 1503256326 -0400	commit: About blurb added
+42215197e7e04093104b8dbed342aa7e39475569 5606253e241d31d29478934d716f03e073cdc27d jeanielam <jeanielam321@gmail.com> 1503267749 -0400	commit: Fidgeting with layout
+5606253e241d31d29478934d716f03e073cdc27d fea37254064b4c5a3cb6885bf2464afa53abafa0 jeanielam <jeanielam321@gmail.com> 1503367789 -0400	commit: Added offwhite background, and social media footer
+fea37254064b4c5a3cb6885bf2464afa53abafa0 6bac1e611ce1060861b5af3da6b9e71b1a105d0d jeanielam <jeanielam321@gmail.com> 1503446392 -0400	commit: Fixed alignment, formatting for smaller screens and changed background colour
+6bac1e611ce1060861b5af3da6b9e71b1a105d0d 3ddf689a207407f0afee7c9202586cc41d142495 jeanielam <jeanielam321@gmail.com> 1503449269 -0400	commit: Remove no scroll for smaller screens
+3ddf689a207407f0afee7c9202586cc41d142495 3522450fb48286420ef5e8feb582054ead29e4a6 jeanielam <jeanielam321@gmail.com> 1503452074 -0400	commit: Added styling to archive
+3522450fb48286420ef5e8feb582054ead29e4a6 a0c92737d3baff395f1acccda19261afbf518d0f jeanielam <jeanielam321@gmail.com> 1503454394 -0400	commit: Added background styling to all pages
+a0c92737d3baff395f1acccda19261afbf518d0f 7f0e0d4ffebbde47a2e3b42c707cb69630341aaf jeanielam <jeanielam321@gmail.com> 1503454774 -0400	commit: Added headshot to about page
+7f0e0d4ffebbde47a2e3b42c707cb69630341aaf e96651d6d93e601e031c743a2f68434473cae64f jeanielam <jeanielam321@gmail.com> 1503532727 -0400	commit: Pagination of archive blog layout
+e96651d6d93e601e031c743a2f68434473cae64f facf2073b262f8eee729ca92ec05a9aead73d2c8 jeanielam <jeanielam321@gmail.com> 1503536223 -0400	commit: Added contact me form submission
+facf2073b262f8eee729ca92ec05a9aead73d2c8 d8e4fad6d9d523fe2989c96624d8dd3eebcec3a1 jeanielam <jeanielam321@gmail.com> 1504154822 -0700	commit: Tag generation
+d8e4fad6d9d523fe2989c96624d8dd3eebcec3a1 afbbddf55d43979794f648cafd40d24dd6261e8d jeanielam <jeanielam321@gmail.com> 1504216692 -0700	pull origin master: Fast-forward
+afbbddf55d43979794f648cafd40d24dd6261e8d 956d080dc22ec3aa4cb51bbfc0c742c7b52c8762 jeanielam <jeanielam321@gmail.com> 1504221206 -0700	commit: Rounded box around tags on article
+956d080dc22ec3aa4cb51bbfc0c742c7b52c8762 f3066dd44a8fb3da257006d6afb363cae6745ce0 jeanielam <jeanielam321@gmail.com> 1504299472 -0700	pull origin master: Fast-forward
+f3066dd44a8fb3da257006d6afb363cae6745ce0 956d080dc22ec3aa4cb51bbfc0c742c7b52c8762 jeanielam <jeanielam321@gmail.com> 1504591834 -0700	reset: moving to 956d080dc22ec3aa4cb51bbfc0c742c7b52c8762
+956d080dc22ec3aa4cb51bbfc0c742c7b52c8762 f3066dd44a8fb3da257006d6afb363cae6745ce0 jeanielam <jeanielam321@gmail.com> 1504591972 -0700	pull origin master: Fast-forward
+f3066dd44a8fb3da257006d6afb363cae6745ce0 4438eea8c101d041a88fc0919cf715443a8c7947 jeanielam <jeanielam321@gmail.com> 1504592013 -0700	revert: Revert "Rounded box around tags on article"
+4438eea8c101d041a88fc0919cf715443a8c7947 ea28d6f83b984d31374be3ed4d47c6f59921c6cb jeanielam <jeanielam321@gmail.com> 1504631259 -0700	commit: Switch from octopress-paginate to jekyll-paginate plugin
+ea28d6f83b984d31374be3ed4d47c6f59921c6cb 76f66708516fcc963eac3372bc0d7a200d464146 jeanielam <jeanielam321@gmail.com> 1504632542 -0700	commit: Tag layout
+76f66708516fcc963eac3372bc0d7a200d464146 ba9bb2f726a9870913acb6ff3e6cd5d6d5367b17 jeanielam <jeanielam321@gmail.com> 1504644268 -0700	commit: Added filtering by tag
+ba9bb2f726a9870913acb6ff3e6cd5d6d5367b17 8e84dde88160112cc8fc7b5671563c09fcb90606 jeanielam <jeanielam321@gmail.com> 1504645794 -0700	commit: Filter by tags added to blog archive
+8e84dde88160112cc8fc7b5671563c09fcb90606 532c381f2772f716491da93d0ce31a0845f19436 jeanielam <jeanielam321@gmail.com> 1504645863 -0700	commit: Hyperlink fix for tags

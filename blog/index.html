@@ -1,61 +1,250 @@
----
-layout: archive
-title: "Latest Posts"
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Latest Posts • Jeanie Lam</title>
+    
+    
+    
+    	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Latest Posts">
+	
+	<meta name="twitter:site" content="@jeanielam">
+	<meta name="twitter:creator" content="@jeanielam">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/images/">
+	
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Latest Posts">
+	
+	<meta property="og:url" content="/blog/">
+	<meta property="og:site_name" content="Jeanie Lam">
 
-<div class="tiles">
+    <link rel="canonical" href="/blog/">
 
-{% for post in paginator.posts %}
-  {% include post-grid.html %}
-{% endfor %}
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Jeanie Lam Atom Feed">
+    <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="/js/vendor/html5shiv.min.js"></script>
+      <script src="/js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Latest Posts - Jeanie Lam</title>
+<meta property="og:title" content="Latest Posts" />
+<meta name="description" content="Just a Computer Science student blogging about her weekly meal preps" />
+<meta property="og:description" content="Just a Computer Science student blogging about her weekly meal preps" />
+<meta property="og:site_name" content="Jeanie Lam" />
+<link rel="next" href="/blog/2/">
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Latest Posts",
+    "description": "Just a Computer Science student blogging about her weekly meal preps",
+    "url": "/blog/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+  </head>
+
+  <body id="js-body">
+    <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
+
+    <header id="masthead">
+  <div class="inner-wrap">
+    <a href="/" class="site-title">Jeanie Lam</a>
+    <nav role="navigation" class="menu top-menu">
+        <ul class="menu-item">
+	<li class="home"><a href="/">Jeanie Lam</a></li>
+	
+    
+    <li><a href="/about/" >ABOUT</a></li>
+  
+    
+    <li><a href="/blog/" >BLOG</a></li>
+  
+    
+    <li><a href="/contact/" >CONTACT</a></li>
+  
+</ul>
+    </nav>
+  </div><!-- /.inner-wrap -->
+</header><!-- /.masthead -->
+    <nav role="navigation" id="js-menu" class="sliding-menu-content">
+  <h5><span>Table of Contents</span></h5>
+  <ul class="menu-item">
+    <li>
+      <a href="/about/">
+        
+        <div class="title">ABOUT</div>
+        
+      </a>
+    </li><li>
+      <a href="/blog/">
+        
+        <div class="title">BLOG</div>
+        
+      </a>
+    </li><li>
+      <a href="/contact/">
+        
+        <div class="title">CONTACT</div>
+        
+      </a>
+    </li>
+  </ul>
+</nav>
+<button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
+  <span class="nav-lines"></span>
+</button>
+
+<div id="js-menu-screen" class="menu-screen"></div>
+
+
+    <div id="page-wrapper">
+      <div id="main" role="main">			
+	<div class="wrap">
+		
+		
+		<div class="page-title">
+			<h1>Latest Posts</h1>
+			
+		</div>
+		<div class="page-content">
+			
+	        <div class="tags">
+			  <a>Tags: </a>
+			  
+
+				<!-- `tag_words` is a sorted array of the tag names. -->
+				
+			  	
+			    	
+			    
+	        		<a class="tag" href="/tag/admin">admin</a>
+		           
+				
+			    	
+			    
+	        		<a class="tag" href="/tag/random">random</a>
+		           
+				
+			    	
+			    
+	        		<a class="tag" href="/tag/test">test</a>
+		           
+				
+			</div>
+		</div>
+		<div class="archive-wrap">
+			<div class="page-content">
+				<div class="tiles">
+
+
+  <article class="tile" itemscope itemtype="http://schema.org/Article">
+	
+    
+    <a href="/blog/granola/" title="Peanut Butter Granola" class="post-feature">
+      
+    	<div class="image">
+        <img src="/images/granola.jpg" alt="feature" itemprop="image">
+      
+      </div>
+      <div class="tile-content">
+        <h2 class="post-title" itemprop="name">
+        	<a href="/blog/granola/">Peanut Butter Granola</a>
+        </h2>
+        
+        	<p class="entry-date date published" id="date">
+        		<time datetime="2017-08-23" itemprop="datePublished">August 23, 2017</time>
+        	</p>
+      	
+      </div>
+    </a>
+
+</article><!-- /.tile -->
+
+
   
 </div>
 
 <div class="pagination">
   <ul>
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <li>
-          <a href="/blog/">&laquo;</a>
-        </li>
-      {% else %}
-        <li>
-          <a href="/blog/{{paginator.previous_page}}">&laquo;</a>
-        </li>
-      {% endif %}
-    {% else %}
+    
       <li class="disabled">
         <a href="#">&laquo;</a>
       </li>
-    {% endif %}
-    {% if paginator.page == 1 %}
+    
+    
       <li class="active">
         <a href="#">1</a>
       </li>
-    {% else %}
-      <li>
-        <a href="/blog/">1</a>
-      </li>
-    {% endif %}
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-        <li class="active">
-          <a href="#">{{count}}</a>
-        </li>
-      {% else %}
+    
+    
+      
         <li>
-          <a href="/blog/{{count}}">{{count}}</a>
+          <a href="/blog/2">2</a>
         </li>
-      {% endif %}
-    {% endfor %}
-    {% if paginator.next_page %}
+      
+    
+    
       <li>
-        <a href="/blog/{{paginator.next_page}}">&raquo;</a>
+        <a href="/blog/2">&raquo;</a>
       </li>
-    {% else %}
-      <li class="disabled">
-        <a href="#">&raquo;</a>
-      </li>
-    {% endif %}
+    
   </ul>
 </div>
+			</div><!-- /.page-content -->
+		</div class="archive-wrap"><!-- /.archive-wrap -->
+		<!-- <nav class="pagination">
+  
+  
+  
+  
+  
+</nav>	 -->
+	</div><!-- /.wrap -->
+
+	<footer role="contentinfo" id="site-footer">
+	<div id="links">
+		<nav role="navigation" class="menu bottom-menu">
+			<ul class="menu-item">
+			
+	      
+				<li><a href="http://github.com/jeanielam" target="_blank">GitHub</a></li>
+			
+	      
+				<li><a href="https://www.linkedin.com/in/lamjeanie/" target="_blank">LinkedIn</a></li>
+			
+	      
+				<li><a href="https://twitter.com/jeanielam" target="_blank">Twitter</a></li>
+			
+	      
+				<li><a href="https://instagram.com/jeanielam" target="_blank">Instagram</a></li>
+			
+			</ul>
+		</nav><!-- /.bottom-menu -->
+	</div>
+</footer>
+</div><!-- /#main -->
+      
+    </div>
+
+    <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+
+  </body>
+
+</html>
