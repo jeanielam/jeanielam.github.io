@@ -15,17 +15,17 @@ layout: default
 			<div class="tags">
 				<a>Tags: </a>
 				{% for tag in page.tags %}
-	            	<a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+	            	<a class="tag" href="/tag/{{ tag | slugify }}">{{ tag }}</a>
 	            {% endfor %}
            </div>
 		</div>
 		{% if page.image.feature %}
 			<div class="page-feature">
-				<figure>
+				<center><figure>
 				<!-- <div class="page-image"> -->
 					<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
 					{% if page.image.credit %}{% include image-credit.html %}{% endif %}
-				</figure>
+				</figure></center>
 				<!-- </div>/.page-image -->
 			</div><!-- /.page-feature -->
 		{% endif %}
@@ -33,13 +33,6 @@ layout: default
 
 			<div id="content" class="page-content" itemprop="articleBody">
 				{{ content }}
-				<!-- <hr /> -->
-				<!-- <footer class="page-footer"> -->
-					
-				<!-- </footer>/.footer -->
-				<!-- <aside>
-					{% include comments.html %}
-				</aside> -->
 			</div><!-- /.content -->
 			<hr />
 			{% include suggested-posts.html %}

@@ -22,6 +22,8 @@ GEM
       jekyll (~> 3.1)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
+    jekyll-archives (2.1.1)
+      jekyll (>= 2.4)
     jekyll-feed (0.5.1)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
@@ -83,6 +85,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-admin
+  jekyll-archives
   jekyll-feed
   jekyll-gist
   jekyll-paginate

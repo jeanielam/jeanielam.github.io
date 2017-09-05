@@ -9,3 +9,4 @@ gem "jekyll-paginate"
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
 gem 'jekyll-tagging-related_posts'
+gem 'jekyll-archives'

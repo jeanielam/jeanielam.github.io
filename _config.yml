@@ -10,6 +10,8 @@ feed:
   path: atom.xml
 paginate: 1
 paginate_path: "/blog/:num/"
+tag_page_layout: tag_page
+tag_page_dir: /tag/
 # Jekyll configuration
 
 sass:
@@ -27,6 +29,7 @@ gems:
   - jekyll-seo-tag
   - jekyll/tagging
   - jekyll-tagging-related_posts
+  - jekyll-archives
 
 # Site owner
 owner:
