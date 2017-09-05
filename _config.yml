@@ -8,11 +8,8 @@ locale: en
 url: 
 feed:
   path: atom.xml
-pagination:
-  per_page: 8
-  limit: false
-  collection: posts
-  permalink: /:num/
+paginate: 1
+paginate_path: "/blog/:num/"
 # Jekyll configuration
 
 sass:
@@ -26,7 +23,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - octopress-paginate
+  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll/tagging
   - jekyll-tagging-related_posts

@@ -1,13 +1,11 @@
 ---
 layout: archive
-permalink: /blog/
 title: "Latest Posts"
-paginate: true
 ---
 
 <div class="tiles">
 
-{% for post in site.categories.blog %}
+{% for post in paginator.posts %}
   {% include post-grid.html %}
 {% endfor %}
   
