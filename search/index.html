@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Latest Posts | Jeanie Lam</title>
+    <title>Search Results | Jeanie Lam</title>
     
     
     
     	<!-- Twitter Cards -->
-	<meta name="twitter:title" content="Latest Posts">
+	<meta name="twitter:title" content="Search Results">
 	
 	<meta name="twitter:site" content="@jeanielam">
 	<meta name="twitter:creator" content="@jeanielam">
@@ -18,12 +18,12 @@
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="Latest Posts">
+	<meta property="og:title" content="Search Results">
 	
-	<meta property="og:url" content="/blog/">
+	<meta property="og:url" content="/search/">
 	<meta property="og:site_name" content="Jeanie Lam">
 
-    <link rel="canonical" href="/blog/">
+    <link rel="canonical" href="/search/">
 
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Jeanie Lam Atom Feed">
     <link href="/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
@@ -40,19 +40,18 @@
       <script src="/js/vendor/respond.min.js"></script>
     <![endif]-->
     <!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Latest Posts - Jeanie Lam</title>
-<meta property="og:title" content="Latest Posts" />
+<title>Search Results - Jeanie Lam</title>
+<meta property="og:title" content="Search Results" />
 <meta name="description" content="Just a Computer Science student blogging about her weekly meal preps" />
 <meta property="og:description" content="Just a Computer Science student blogging about her weekly meal preps" />
 <meta property="og:site_name" content="Jeanie Lam" />
-<link rel="next" href="/blog/2/">
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "WebPage",
-    "headline": "Latest Posts",
+    "headline": "Search Results",
     "description": "Just a Computer Science student blogging about her weekly meal preps",
-    "url": "/blog/"
+    "url": "/search/"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -115,140 +114,47 @@
     <div id="page-wrapper">
       <div id="main" role="main">			
 	<div class="wrap">
-		
-		
-		<div class="page-title">
-			<h1>Latest Posts</h1>
-			
-		</div>
-
-		
-
 		<div id="search">
 			<form action="/search" method="get">
 				<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="on">
 			</form>
 		</div>
-		
-		
-		<script src="/js/vendor/jquery-1.9.1.min.js"></script>
-		<div class="page-content">
-			
-	        <div class="tags">
-			  <a>Tags: </a>
-			  
-
-				<!-- `tag_words` is a sorted array of the tag names. -->
-				
-			  	
-			    	
-			    
-	        		<a class="tag" href="/tag/admin">admin</a>
-		           
-				
-			    	
-			    
-	        		<a class="tag" href="/tag/random">random</a>
-		           
-				
-			    	
-			    
-	        		<a class="tag" href="/tag/test">test</a>
-		           
-				
+		<section id="search-results" style="display: none;">
+			<p>Search results</p>
+			<div class="entries">
 			</div>
-		</div>
-		<div class="archive-wrap">
-			<div class="page-content">
-				<div class="tiles">
+		</section>
+
+		
+		<script id="search-results-template" type="text/mustache">
+			{{#entries}}
+			<article>
+				<h3>
+					{{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+					<a href="{{url}}">{{title}}</a>
+				</h3>
+			</article>
+			{{/entries}}
+		</script>
+		
+
+		<script src="/js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
 
 
-  <article class="tile" itemscope itemtype="http://schema.org/Article">
-	
-    
-    <a href="/blog/granola/" title="Peanut Butter Granola" class="post-feature">
-      
-    	<div class="image">
-        <img src="/images/granola.jpg" alt="feature" itemprop="image">
-      
-      </div>
-      <div class="tile-content">
-        <h2 class="post-title" itemprop="name">
-        	<a href="/blog/granola/">Peanut Butter Granola</a>
-        </h2>
-        
-        	<p class="entry-date date published" id="date">
-        		<time datetime="2017-08-23" itemprop="datePublished">August 23, 2017</time>
-        	</p>
-      	
-      </div>
-    </a>
-
-</article><!-- /.tile -->
-
-
-  
-</div>
-
-<div class="pagination">
-  <ul>
-    
-      <li class="disabled">
-        <a href="#">&laquo;</a>
-      </li>
-    
-    
-      <li class="active">
-        <a href="#">1</a>
-      </li>
-    
-    
-      
-        <li>
-          <a href="/blog/2">2</a>
-        </li>
-      
-    
-    
-      <li>
-        <a href="/blog/2">&raquo;</a>
-      </li>
-    
-  </ul>
-</div>
-			</div><!-- /.page-content -->
-		</div class="archive-wrap"><!-- /.archive-wrap -->
-		<!-- <nav class="pagination">
-  
-  
-  
-  
-  
-</nav>	 -->
-	</div><!-- /.wrap -->
-
-	<footer role="contentinfo" id="site-footer">
-	<div id="links">
-		<nav role="navigation" class="menu bottom-menu">
-			<ul class="menu-item">
-			
-	      
-				<li><a href="http://github.com/jeanielam" target="_blank">GitHub</a></li>
-			
-	      
-				<li><a href="https://www.linkedin.com/in/lamjeanie/" target="_blank">LinkedIn</a></li>
-			
-	      
-				<li><a href="https://twitter.com/jeanielam" target="_blank">Twitter</a></li>
-			
-	      
-				<li><a href="https://instagram.com/jeanielam" target="_blank">Instagram</a></li>
-			
-			</ul>
-		</nav><!-- /.bottom-menu -->
+		<script type="text/javascript">
+		$(function() {
+			$( '#search-query' ).lunrSearch({
+				indexUrl: '/js/index.json',           // URL of the `index.json` index data for your site
+				results:  '#search-results',          // jQuery selector for the search results container
+				entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+				template: '#search-results-template'  // jQuery selector for the Mustache.js template
+			});
+		});
+		</script>
 	</div>
-</footer>
-</div><!-- /#main -->
+</div>
+				
       
     </div>
 
